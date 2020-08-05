@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W3schoolClone</title>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+
+		body{
+			padding: 0px;
+			margin: 0px;
+		}
+
+		#logo{
+			width: 100%;
+			display: inline-block;
+		}
+
+		#logo h2{
+			display: inline-block;
+			float: left;
+			padding-left: 10px;
+			padding-top: 25px;
+		}
+
+		#logo h2 a{
+			text-decoration: none;
+			color: green;
+		}
+
+		#logo p{
+			display: inline-block;
+			float: right;
+			padding-right: 10px;
+			padding-top: 35px;
+			font-size: 18px;
+			word-spacing: 8px;
+			letter-spacing: 3px;
+		}
+
+		.navbar {
+  			overflow: hidden;
+  			background-color: green;
+
+
+		}
+
+		.navbar a {
+  			float: left;
+  			font-size: 22px;
+  			color: white;
+  			text-align: center;
+  			padding: 20px 22px;
+  			text-decoration: none;
+		}
+
+		.dropdown {
+  			float: left;
+  			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+  			font-size: 16px;  
+  			border: none;
+  			outline: none;
+  			color: white;
+  			padding: 14px 16px;
+  			background-color: inherit;
+  			font: inherit;
+  			margin: 0;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+  			background-color: gray;
+		}
+
+		.dropdown-content {
+  			display: none;
+  			position: absolute;
+  			background-color: #c7ecee;
+  			width: 100%;
+  			left: 0;
+  			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+		}
+
+		.dropdown-content .header {
+  			background: #535c68;
+  			padding: 16px;
+  			color: white;
+		}
+
+		.dropdown:hover .dropdown-content {
+  			display: block;
+		}
+
+		.column {
+  			float: left;
+  			width: 25%;
+  			padding: 10px;
+  			background-color: #DCDCDC;
+  			height: 750px;
+		}
+
+		.column a {
+  			float: none;
+  			color: black;
+  			padding: 16px;
+  			text-decoration: none;
+  			display: block;
+  			text-align: left;
+		}
+
+		.column a:hover {
+  			background-color: Gray;
+		}
+
+		.row:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+		.container{
+    		text-align:center;
+    		width: 350px;
+    		height: 250px;
+    		position: fixed;
+    		margin: 80px;
+    		background-color: #ffffff;
+    		border-radius: 10px;
+    		padding:50px;
+    		bottom: 10px;
+    		right: 20px;
+		}
+
+		h4{
+    		margin-bottom:0px;
+    		align-content: center;
+    		align-items: center;
+    		margin: 10px;
+    		margin-top: 22px;
+    		font-size: 30px;
+    		font-family: 'Montserrat Alternates', sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<div id="logo">
+		<h2>w3school<a href="">.com</a></h2>
+		<p>WORLD'S LARGEST WEB DEVELOPER SITE</p>
+	</div>
+
+	<div class="navbar">
+  		<a href="#">Tutorials</a>
+  		<a href="#">References</a>
+  		<a href="#Exercise">Exercise</a>
+  	<div class="dropdown">
+    <button class="dropbtn">Example</button>
+    <div class="dropdown-content">
+      	<div class="row">
+        	<div class="column">
+        	  	<h3>HTML and CSS</h3>
+        	  	<a href="#">Learn HTML</a>
+        	  	<a href="#">Learn CSS</a>
+        	  	<a href="#">Learn Bootstarp</a>
+        	  	<a href="#">Learn Icon</a>
+        	  	<a href="#">Learn SVG</a>
+        	  	<a href="#">Learn canvas</a>
+        	  	<a href="#">learn How To</a>
+        	</div>
+        	<div class="column">
+          		<h3>JavaScript</h3>
+          		<a href="#">JavaScript Examples</a>
+          		<a href="#">HTML DOM Examples</a>
+          		<a href="#">jQuery Examples</a>
+          		<a href="#">AngularJS Examples</a>
+          		<a href="#">AJAX Examples</a>
+          		<a href="#">W3.JS Examples</a>
+        	</div>
+        	<div class="column">
+          		<h3>Server Side</h3>
+          		<a href="#">SQL Examples</a>
+          		<a href="#">PHP Examples</a>
+          		<a href="#">Node js. Examples</a>
+        	</div>
+        	<div class="column">
+          		<h1 style="font-family: 'Amiri', serif;"> Register Here</h1><br>
+        		<form id="register">
+        			<label>First Name :</label>
+        			<input type="text" name="First Name" placeholder="First Name"><br><br>
+        			<label>Last Name :</label>
+        			<input type="text" name="Last Name" placeholder="Last Name"><br><br>
+        			<label>Email Id :</label>
+        			<input type="text" name="" placeholder="email@gmail.com"><br><br>
+        			<label>Mobile No :</label>
+        			<input type="tel" placeholder="7679556104" min="10" max="10"><br><br>
+        			<label>Password :</label>
+        			<input type="text number" name="" placeholder="passworB@123"><br><br>
+        			<div style="padding-left: 125px;">
+            			<input type="submit" name="" value="Sign Up">
+        			</div>
+        		</form> 
+        	</div>
+      	</div>
+    </div>
+    </div> 
+</div>
+
+<div style="padding:16px">
+  <h3>Frontend Web Development</h3>
+  <p>Well, a lot of people think of it as a cloud.
+Something that's hanging around in the sky. It's super complex; super difficult to understand, but actually
+that's not it at all.
+The Internet is really simple.
+All it is is just a long piece of wire.
+And the wire connects different computers to each other.
+So you might have one computer that's in Seattle and another computer that's in London. And they can
+talk to each other and transfer data through this giant wire.
+Now some of these computers attached to the internet have a very special job.
+They have to be online 24/7, ready to serve you all of the data and the files that you are requesting
+when you try to access websites. And the computers that are doing that job, we would call a server. And
+the computers that any user would use to access the internet is called a client.
+Now you can imagine a web server as a giant library that's open 24/7. And you can go in there at any
+hour of the day and request "I want to see Google's home page" or "I want to see the latest post on Tech
+Crunch". And it would be up to serve you with all of the files and data that you would need to be able
+to view whatever website it is that you requested.
+Now you can imagine if there's a library that's big enough to house all of these websites. then it's
+going to be pretty difficult to quickly locate the thing that you want out of this giant library,
+right?
+So how is this problem solved on the Internet?
+Well, let's say that you're sitting at home on your computer and you type in google.com because you
+want to head over to the main Google home page.
+What happens behind the scenes is that your browser will send a message to your Internet service provider.
+So these are the people who you pay to be able to access the Internet.
+And if you're in the US, that's a company like AT&amp;T or Comcast. And if you're in the U.K. then that would
+be something like BT or TalkTalk.
+Now the message that you're sending the ISP is "I want to see google.com". And the ISP will then relay
+that message to something called a DNS server - a domain name system server. And a DNS server is essentially
+just a souped up phone book.
+And what happens when you make that request through your browser is the DNS server will look up in its
+database as to what is the exact IP address of that website that you're trying to access. And every
+single computer that's connected to the internet has an IP address.
+This is like a postal address for your computer. So that when people need to send and receive files on
+the Internet, each computer can be located by a unique IP address.
+And once that DNS server finds the IP address, it sends that back to your browser.
+So now you know the exact address where you can find the Google home page.
+So, the next thing that happens, is you will send a direct request to that address through your Internet
+service provider.
+And this message will be delivered via what's called the Internet backbone.
+Now, the Internet backbone isn't some sort of analogy for some clever programming.
+It's literally the backbone of the Internet.
+And if you had a submarinecablemap.com, you can view all of the underwater cables that power the
+Internet. And the Internet is made up of these huge sprawling masses of wires, connecting all of the world's
+Internet users. As you can imagine
+it's a pretty complex world out there.
+Now, if I'm sitting in London and I want to see a website that's hosted in the United States, then my
+browser would have t</p>
+</div>
+
+</body>
+</html>
